@@ -4,6 +4,7 @@ Backport of `ActiveRecord::QueryMethods::WhereChain#missing` for Rails 6.0 and 5
 https://github.com/rails/rails/pull/34727
 
 [![Build Status](https://travis-ci.com/yujideveloper/activerecord-missing.svg?branch=master)](https://travis-ci.com/yujideveloper/activerecord-missing)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d2c29bf85f80bd50a564/maintainability)](https://codeclimate.com/github/yujideveloper/activerecord-missing/maintainability)
 
 ## Installation
 
