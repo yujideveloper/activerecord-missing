@@ -27,6 +27,7 @@ ActiveRecord::Migration.verbose = false
 CreateAllTables.up
 
 class ApplicationRecord < ActiveRecord::Base
+  self.abstract_class = true
 end
 class Author < ApplicationRecord
   has_many :posts
