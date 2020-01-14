@@ -1,8 +1,8 @@
 # ActiveRecord::Missing
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/activerecord/missing`. To experiment with that code, run `bin/console` for an interactive prompt.
+Backport of `ActiveRecord::QueryMethods::WhereChain#missing` for Rails 6.0 and 5.x applications.  
+https://github.com/rails/rails/pull/34727
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -22,7 +22,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+``` ruby
+Post.where.missing(:author)
+Post.where.missing(:author, :comments)
+```
 
 ## Development
 
@@ -32,7 +35,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/activerecord-missing.
+Bug reports and pull requests are welcome on GitHub at https://github.com/yujideveloper/activerecord-missing.
 
 
 ## License
