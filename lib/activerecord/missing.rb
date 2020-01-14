@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "activerecord/missing/version"
 require "active_support/lazy_load_hooks"
 
